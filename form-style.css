@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* mobile-first design */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorBlue: hsl(234, 29%, 20%);
+  --colorBlue2: hsl(235, 18%, 26%);
+  --colorGrey: hsl(0, 0%, 58%);
+  --colorWhite: hsl(0, 0%, 100%);
+  --font-weight1: 800;
+  --font-weight2: 700;
+  --btn-color: hsl(4, 100%, 67%); /*Red*/
+  --font-size: 16px; /* (paragraph)*/
+  --font-family: Roboto;
+}
+
+body {
+  width: 100%;
+  height: 100svh;
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 100%;
+}
+
+picture > img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.component-information {
+  padding: 2rem;
+}
+
+.component-option {
+  margin-top: 1rem;
+  font-size: var(--font-size);
+}
+
+.component-option li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+.component-information ul {
+  list-style: none;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+footer > input {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  border: solid 1px var(--colorGrey);
+}
+
+.userEmail {
+  padding-left: 1rem;
+}
+
+.submitBtn,
+.dismissBtn {
+  background-color: var(--colorBlue);
+  color: var(--colorWhite);
+}
+
+/* submit (success) page */
+
+.messag-component {
+  width: 100%;
+  height: 100vh;
+}
+
+.messag-component > img {
+  margin: 10rem 0rem 0rem 2rem;
+}
+
+.message {
+  width: 21rem;
+  margin: 2rem;
+}
+
+.message > p {
+  margin-top: 1rem;
+}
+
+.dismissBtn{
+  width: 95%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-top: 11rem;
+
+}
+
+/* design : tablets and up */
+
+@media screen and (min-width: 30rem) {
+  body {
+    background-color: var(--colorBlue2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container {
+  width: auto;
+  height: auto;
+  background-color: var(--colorWhite);
+  border-radius: 1rem;
+}
+/* design : tablets and up */
+
+.messag-component{
+  margin: 2rem;
+  width: auto;
+  height: auto;
+  background-color: var(--colorWhite);
+  border-radius: 1rem;
+  display: none;
+}
+
+.messag-component > img{
+  margin: 2rem 0rem 2rem 3rem;
+}
+
+.message{
+  margin-top: -1rem;
+  margin-left: 3rem;
+}
+
+.dismissBtn{
+  margin: 2rem 0rem 3rem 0rem;
+}
+
+/* design : desktops and up */
+
+@media screen and (min-width: 64rem) {
+  body {
+    background-color: var(--colorBlue2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container > article {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  picture > img {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+
+  .info {
+    margin-top: 1rem;
+  }
+
+  .component-option {
+    margin-top: 2rem;
+  }
+
+  .component-information {
+    max-width: 29rem;
+  }
+
+  .component-information > footer {
+    margin-top: 3.3rem;
+  }
+
+  .messag-component{
+    display: block;
+  }
+}

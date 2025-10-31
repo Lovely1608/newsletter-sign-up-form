@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewSletter-sign-up-with-success-message</title>
+    <link rel="stylesheet" href="form-style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <article>
+        <div class="img-container">
+          <picture>
+            <!--using media for mediaquery -->
+            <source
+              media="(min-width: 64rem)"
+              srcset="images/illustration-sign-up-desktop.svg"
+            />
+            <source
+              media="(min-width: 30rem)"
+              srcset="images/illustration-sign-up-tablet.svg"
+            />
+
+            <img
+              srcset="images/illustration-sign-up-mobile.svg"
+              alt="red new template with boxes"
+            />
+          </picture>
+        </div>
+        <div class="component-information">
+          <h1 class="title">Stay updated!</h1>
+          <p class="info">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <div class="component-option">
+            <ul>
+              <li>
+                <img src="images/icon-list.svg" alt="check icon" />
+                Product discovery and building what matters
+              </li>
+
+              <li>
+                <img src="images/icon-list.svg" alt="check icon" />
+                Measuring to ensure updates are a success
+              </li>
+
+              <li>
+                <img src="images/icon-list.svg" alt="check icon" />
+                And much more!
+              </li>
+            </ul>
+          </div>
+
+          <footer>
+            <h6>Email address</h6>
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              class="userEmail"
+              placeholder="email@company.com"
+            />
+            <input
+              type="submit"
+              name="submit"
+              value="Subscribe to monthly newsletter"
+              class="submitBtn"
+            />
+          </footer>
+        </div>
+      </article>
+    </div>
+
+    <main>
+      <div class="messag-component">
+        <img src="images/icon-success.svg" alt="yes mark with orange color" />
+        <div class="message">
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <b>ash@loremcompany.com.</b> Please open it and click the button
+            inside to confirm your subscription
+          </p>
+
+          <button class="dismissBtn">Dismiss message</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="form-script.js"></script>
+  </body>
+</html>
