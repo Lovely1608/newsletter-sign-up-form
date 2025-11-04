@@ -64,7 +64,7 @@ submitBtn.onclick = (e) => {
 dismiss.onclick = () => {
   const success = document.querySelector(".message-component");
   const form = document.querySelector(".container");
-  if ((success.style.display = "block")) {
+  if ((success.style.display === "block")) {
     form.style.display = "block";
     success.style.display = "none";
 
