@@ -13,9 +13,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ### The challenge
 
@@ -38,10 +35,45 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Lovely1608/newsletter-sign-up-form.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Lovely1608/newsletter-sign-up-form.git)
+- Live Site URL: (https://lovely1608.github.io/newsletter-sign-up-form/) 
 
 ## My process
+
+1. Planning
+
+I started by analyzing the design and setting up my project structure. Then, I linked my CSS and JavaScript files to the HTML file to begin building.
+
+2. Building the Layout
+
+I focused first on writing clean, semantic HTML. During this step, I learned about the <picture> tag for handling responsive images — it was fascinating to see how it works similarly to media queries, but directly within HTML.
+I also applied the mobile-first approach, based on feedback from my previous project, and I’m glad I got to implement this technique here.
+
+3. Styling and Responsiveness
+
+I used CSS Flexbox for the main layout and tested the design across different screen sizes using Chrome DevTools.
+I adjusted fonts, images, and spacing to prevent layout shifts and improve overall performance, making sure everything looked consistent on all devices.
+
+4. JavaScript / Logic
+
+I implemented form validation using regular expressions and kept the logic simple and readable with small conditional statements.
+Two main challenges I faced were:
+
+Understanding the difference between local and domain parts of an email — which helped me learn about the split() function.
+
+Figuring out how to reset the form after submission — I solved it using window.location.reload().
+
+5. Learning Outcomes
+
+Through this project, I gained a deeper understanding of:
+
+Writing semantic and accessible HTML
+
+Building logic before focusing on design
+
+Preventing layout shifts (CLS) for better performance
+
+Structuring projects more efficiently
 
 ### Built with
 
@@ -103,4 +135,4 @@ I am still not good with regular expression uses with js and my if condition can
 
 ## Author
 
-- Frontend Mentor - [Lovely]()
+- Frontend Mentor - [Lovely](https://www.frontendmentor.io/solutions/article-preview-component-GJhV0x-P84)
